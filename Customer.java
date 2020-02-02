@@ -27,8 +27,8 @@ class Customer {
 				each.getDaysRented() > 1) frequentRenterPoints ++;
  //показать результаты для этой аренды
 				result += "\t" + each.getMovie().getTitle()+ "\t" +
-			String.valueOf(thisAmount) + "\n";
-			totalAmount += thisAmount;
+			String.valueOf(each.getCharge()) + "\n";
+			totalAmount += each.getCharge();
 		}
  //добавить нижний колонтитул
 		result += "Сумма задолженности составляет " +
